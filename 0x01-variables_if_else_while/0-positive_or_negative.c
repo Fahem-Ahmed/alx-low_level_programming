@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ * Discription: 'check for number if it is positive or negative'
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -10,12 +11,17 @@ int main(void)
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if(n>0){
-		printf("is positive %d \n" , n);
-	else if(n==0){
-		printf("%d is zero\n" , n);
-	else{
-		printf("%d is negative  \n", n);
+        if (n > 0)
+	{
+		printf("%d is positive \n" , n);
+	}
+	else if(n == 0)
+	{
+		printf("%d is zero \n" , n);
+	}
+	else
+	{
+		printf("%d is negative \n" , n);
 	}
 	return (0);
 }
